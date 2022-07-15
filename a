@@ -1,0 +1,6 @@
+game:service'RunService'.RenderStepped:connect(function()
+    pcall(function()
+        game:GetService("Workspace").Wormhole:Destroy()
+      game.Players.LocalPlayer.Character.Action:Destroy()
+    end)
+  end)
